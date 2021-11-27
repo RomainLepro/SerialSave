@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import serial
-import time
 from time import *
 
 
@@ -14,8 +13,6 @@ def main():
     
     f = open("serialSave.txt", "a")
     f.write("\n#"+str(time())+"\n")
-    f.close()
-    #header of each log
     
     ports = list(port_list.comports())
     for p in ports:
@@ -33,18 +30,18 @@ def main():
     #ser.write("start")
     try:
         while True:
-            i+=1
-            sleep(0.1)
             if ser.in_waiting > 0:
-                f = open("serialSave.txt","a")
                 line = ser.readline().decode('utf-8').rstrip()
                 f.write(line+"\n")
                 print(line)
-                #close and reopen each time u write data 
+            if (i%100000):
+                
+f.write("\nnewline")
                 f.close()
+                f.open("serialSave.txt","a")
     except:
-        f = open("serialSave.txt","a")
-        f.write("\nan error occured, closing log file (usb deconected ?)\n")
-        f.close()
+        f.wite("\n an error occured\n")
+    f.write("\n end")
+    f.close()
 
 main()
