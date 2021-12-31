@@ -21,17 +21,14 @@ def main():
     for p in ports:
         print (p)
     print(ports[0][0])
-    
-    
     try:
         #for ubuntu
         ser = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
     except:
         #for windows
-        ser = serial.Serial(ports[0][0], 115200, timeout=1)    
+        ser = serial.Serial(ports[0][0], 115200, timeout=1)
+        
     ser.reset_input_buffer()
-    
-    sleep(10)
     
     #ser.write("start")
     try:
