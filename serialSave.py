@@ -31,7 +31,7 @@ def main():
         ser = serial.Serial(ports[0][0], 115200, timeout=1)    
     ser.reset_input_buffer()
     
-    sleep(1000)
+    sleep(10)
     
     #ser.write("start")
     try:
