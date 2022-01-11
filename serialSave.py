@@ -45,11 +45,10 @@ def main():
         print("trying")
         while True:
             i+=1
+            print(ser.tools.list_ports.comports())
             sleep(0.1)
             if ser.in_waiting > 0:
-                print(os.path.join(path,FileName))
                 f = open(os.path.join(path,FileName),"a")
-                print("file opened")
                 line = ser.readline().decode('utf-8').rstrip()
                 f.write(line+"\n")
                 print(line)
