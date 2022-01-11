@@ -42,6 +42,7 @@ def main():
     print("file created")
     #ser.write("start")
     try:
+        print("trying")
         while True:
             i+=1
             sleep(0.1)
@@ -53,6 +54,7 @@ def main():
                 #close and reopen each time u write data 
                 f.close()
     except:
+        print("except")
         f = open("serialSave.txt","a")
         f.write("\nan error occured, closing log file (usb deconected ?)\n")
         f.close()
