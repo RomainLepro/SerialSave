@@ -1,0 +1,46 @@
+Begin plane
+init mpu
+Initializing I2C devices...
+Testing device connections...
+MPU6050 connection successful
+>........>........
+//           X Accel  Y Accel  Z Accel   X Gyro   Y Gyro   Z Gyro
+//OFFSETS    -1426,    2143,    1260,     192,     141,      13
+Enabling DMP...
+mpu initiated
+init screen
+display allocated
+screen initiated
+Servos connected
+init gps
+gps initiated
+init radio
+interupt attached: 0
+radio initiated
+init ultrasound
+ultrasound initiated
+time:9450,PIDX_output:-0.02,P:-0.01,I:-0.00,D:-0.01,mpu_Ox:-0.01
+time:9552,PIDX_output:-0.02,P:-0.01,I:-0.00,D:-0.01,mpu_Ox:-0.01
+time:9654,PIDX_output:-0.03,P:-0.01,I:-0.00,D:-0.01,mpu_Ox:-0.01
+time:9759,PIDX_output:0.00,P:-0.01,I:-0.00,D:0.02,mpu_Ox:-0.01
+time:9861,PIDX_output:-0.05,P:-0.00,I:-0.00,D:-0.04,mpu_Ox:-0.00
+time:9963,PIDX_output:-0.07,P:-0.01,I:-0.00,D:-0.06,mpu_Ox:-0.01
+time:10064,PIDX_output:-0.04,P:-0.02,I:-0.01,D:-0.01,mpu_Ox:-0.02
+time:10168,PIDX_output:-0.00,P:-0.02,I:-0.01,D:0.02,mpu_Ox:-0.02
+time:10269,PIDX_output:-0.02,P:-0.03,I:-0.01,D:0.02,mpu_Ox:-0.03
+time:10370,PIDX_output:-0.06,P:-0.03,I:-0.01,D:-0.02,mpu_Ox:-0.03
+time:10472,PIDX_output:-0.07,P:-0.03,I:-0.02,D:-0.03,mpu_Ox:-0.03
+time:10573,PIDX_output:-0.11,P:-0.05,I:-0.02,D:-0.05,mpu_Ox:-0.05
+time:10674,PIDX_output:-0.10,P:-0.06,I:-0.02,D:-0.02,mpu_Ox:-0.06
+time:10775,PIDX_output:-0.09,P:-0.06,I:-0.03,D:-0.00,mpu_Ox:-0.06
+time:10926,PIDX_output:-0.08,P:-0.04,I:-0.04,D:-0.00,mpu_Ox:-0.04
+time:11029,PIDX_output:-0.10,P:-0.04,I:-0.04,D:-0.02,mpu_Ox:-0.04
+time:11132,PIDX_output:-0.07,P:-0.04,I:-0.05,D:0.02,mpu_Ox:-0.04
+time:11233,PIDX_output:-0.12,P:-0.04,I:-0.05,D:-0.03,mpu_Ox:-0.04
+time:11334,PIDX_output:-0.04,P:-0.05,I:-0.06,D:0.06,mpu_Ox:-0.05
+time:11436,PIDX_output:-0.13,P:-0.04,I:-0.06,D:-0.03,mpu_Ox:-0.04
+time:11537,PIDX_output:-0.10,P:-0.04,I:-0.06,D:0.00,mpu_Ox:-0.04
+time:11638,PIDX_output:-0.08,P:-0.03,I:-0.07,D:0.02,mpu_Ox:-0.03
+time:11740,PIDX_output:-0.11,P:-0.04,I:-0.07,D:-0.00,mpu_Ox:-0.04
+
+an error occured, closing log file (usb deconected ?)

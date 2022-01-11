@@ -1,0 +1,2 @@
+
+an error occured, closing log file (usb deconected ?)

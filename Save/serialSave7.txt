@@ -1,0 +1,7 @@
+Begin plane
+init mpu
+Initializing I2C devices...
+Testing device connections...
+MPU6050 connection successful
+
+an error occured, closing log file (usb deconected ?)

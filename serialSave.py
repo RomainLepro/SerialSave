@@ -8,10 +8,10 @@ import os
 def main():
     i = 0
     import serial.tools.list_ports as port_list
-    
-    f = open("serialSave.txt", "a")
-    f.write("\n#"+str(time())+"\n")
-    f.close()
+    sleep(10)
+    #f = open("serialSave.txt", "a")
+    #f.write("\n#"+str(time())+"\n")
+    #f.close()
     #header of each log
 
     ports = list(port_list.comports())
@@ -23,6 +23,8 @@ def main():
             print("no connection")
             return 1
     
+    for p in ports:
+        print(p)
     print(ports[0][0])
     
     try:
