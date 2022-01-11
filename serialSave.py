@@ -6,21 +6,25 @@ from time import *
 import os
 
 def main():
-
     i = 0
-    
     import serial.tools.list_ports as port_list
-    
     
     f = open("serialSave.txt", "a")
     f.write("\n#"+str(time())+"\n")
     f.close()
     #header of each log
-    
+
     ports = list(port_list.comports())
-    for p in ports:
-        print (p)
+    
+    if(len(ports)==0):#wait 10s and retry latter
+        sleep(10)
+        ports = list(port_list.comports())
+        if(len(ports)==0):    
+            print("no connection")
+            return 1
+    
     print(ports[0][0])
+    
     try:
         #for ubuntu
         ser = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
@@ -42,20 +46,17 @@ def main():
     print("file created")
     #ser.write("start")
     try:
-        print("trying")
+        f = open(os.path.join(path,FileName),"a")
         while True:
-            i+=1
-            print(ser.tools.list_ports.comports())
-            sleep(0.1)
+            sleep(0.01)
             if ser.in_waiting > 0:
-                f = open(os.path.join(path,FileName),"a")
                 line = ser.readline().decode('utf-8').rstrip()
                 f.write(line+"\n")
                 print(line)
                 #close and reopen each time u write data 
-                f.close()
     except:
         print("except")
+        f.close()
         f = open(os.path.join(path,FileName),"a")
         f.write("\nan error occured, closing log file (usb deconected ?)\n")
         f.close()
