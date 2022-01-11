@@ -34,8 +34,11 @@ def main():
     
     paths, dirs, files = next(os.walk(path))
     FileName = "serialSave" + str(len(files)) +".txt"
+<<<<<<< HEAD
     
     print(FileName)
+=======
+>>>>>>> e28e19c6ea3e829ee3e02f2ee5375431a1256f45
     
     f = open(os.path.join(path,FileName),"w")
     f.close()
