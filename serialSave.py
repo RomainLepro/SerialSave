@@ -3,7 +3,7 @@ import serial
 import time
 from time import *
 
-
+import os
 
 def main():
 
@@ -24,19 +24,26 @@ def main():
     try:
         #for ubuntu
         ser = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
+        path = "/home/pi/Desktop/imageDetection/SerialSave/Save"
     except:
         #for windows
         ser = serial.Serial(ports[0][0], 115200, timeout=1)
+        path = "./Save"
         
     ser.reset_input_buffer()
     
+    paths, dirs, files = next(os.walk(path))
+    FileName = "serialSave" + str(len(dirs)) +".txt"
+    
+    f = open(os.path.join(path,FileName),"w")
+    f.close()
     #ser.write("start")
     try:
         while True:
             i+=1
             sleep(0.1)
             if ser.in_waiting > 0:
-                f = open("serialSave.txt","a")
+                f = open(os.path.join(path,FileName),"a")
                 line = ser.readline().decode('utf-8').rstrip()
                 f.write(line+"\n")
                 print(line)

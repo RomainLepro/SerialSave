@@ -14,13 +14,12 @@ if __name__ == '__main__':
     print(ports[0][0])
     try:
         #for ubuntu
-        ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
+        ser = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
     except:
         #for windows
-        ser = serial.Serial(ports[0][0], 9600, timeout=1)
+        ser = serial.Serial(ports[0][0], 115200, timeout=1)
     ser.reset_input_buffer()
     
-    ser.write("start")
     
     while True:
         if ser.in_waiting > 0:
