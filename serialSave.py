@@ -33,7 +33,9 @@ def main():
     ser.reset_input_buffer()
     
     paths, dirs, files = next(os.walk(path))
-    FileName = "serialSave" + str(len(dirs)) +".txt"
+    FileName = "serialSave" + str(len(files)) +".txt"
+    
+    print(FileName)
     
     f = open(os.path.join(path,FileName),"w")
     f.close()

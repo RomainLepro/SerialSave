@@ -1,0 +1,65 @@
+Begin plane
+init mpu
+Initializing I2C devices...
+Testing device connections...
+MPU6050 connection successful
+>........>........
+//           X Accel  Y Accel  Z Accel   X Gyro   Y Gyro   Z Gyro
+//OFFSETS    -1466,    2145,    1256,     191,     143,      13
+Enabling DMP...
+mpu initiated
+init screen
+display allocated
+screen initiated
+Servos connected
+init gps
+gps initiated
+init radio
+interupt attached: 0
+radio initiated
+init ultrasound
+ultrasound initiated
+time:9449,PIDX_output:-0.02,P:-0.01,I:-0.00,D:-0.01,mpu_Ox:-0.01
+time:9456,PIDX_output:-0.02,P:-0.00,I:-0.00,D:-0.01,mpu_Ox:-0.00
+time:9463,PIDX_output:-0.03,P:-0.00,I:-0.00,D:-0.02,mpu_Ox:-0.00
+time:9470,PIDX_output:-0.04,P:-0.01,I:-0.00,D:-0.03,mpu_Ox:-0.01
+time:9478,PIDX_output:-0.03,P:-0.01,I:-0.00,D:-0.02,mpu_Ox:-0.01
+time:9485,PIDX_output:0.01,P:-0.01,I:-0.00,D:0.02,mpu_Ox:-0.01
+time:9492,PIDX_output:-0.01,P:-0.01,I:-0.00,D:0.00,mpu_Ox:-0.01
+time:9498,PIDX_output:0.02,P:-0.01,I:-0.00,D:0.03,mpu_Ox:-0.01
+time:9505,PIDX_output:-0.05,P:-0.01,I:-0.00,D:-0.05,mpu_Ox:-0.01
+time:9512,PIDX_output:-0.11,P:-0.01,I:-0.00,D:-0.09,mpu_Ox:-0.01
+time:9520,PIDX_output:-0.05,P:-0.01,I:-0.00,D:-0.04,mpu_Ox:-0.01
+time:9527,PIDX_output:0.01,P:-0.01,I:-0.00,D:0.02,mpu_Ox:-0.01
+time:9534,PIDX_output:0.03,P:-0.01,I:-0.00,D:0.03,mpu_Ox:-0.01
+time:9541,PIDX_output:0.02,P:-0.00,I:-0.00,D:0.03,mpu_Ox:-0.00
+time:9548,PIDX_output:-0.00,P:-0.00,I:-0.00,D:0.00,mpu_Ox:-0.00
+time:9555,PIDX_output:0.00,P:-0.01,I:-0.00,D:0.01,mpu_Ox:-0.01
+time:9563,PIDX_output:0.00,P:-0.01,I:-0.00,D:0.01,mpu_Ox:-0.01
+time:9570,PIDX_output:0.02,P:-0.01,I:-0.00,D:0.03,mpu_Ox:-0.01
+time:9577,PIDX_output:0.06,P:-0.01,I:-0.00,D:0.07,mpu_Ox:-0.01
+time:9584,PIDX_output:-0.09,P:-0.01,I:-0.00,D:-0.08,mpu_Ox:-0.01
+time:9591,PIDX_output:-0.15,P:-0.01,I:-0.00,D:-0.14,mpu_Ox:-0.01
+time:9598,PIDX_output:-0.04,P:-0.01,I:-0.00,D:-0.03,mpu_Ox:-0.01
+time:9607,PIDX_output:0.05,P:-0.00,I:-0.00,D:0.06,mpu_Ox:-0.00
+time:9613,PIDX_output:0.04,P:-0.00,I:-0.00,D:0.05,mpu_Ox:-0.00
+time:9621,PIDX_output:0.01,P:-0.00,I:-0.00,D:0.01,mpu_Ox:-0.00
+time:9628,PIDX_output:-0.06,P:-0.01,I:-0.00,D:-0.05,mpu_Ox:-0.01
+time:9635,PIDX_output:-0.05,P:-0.01,I:-0.00,D:-0.03,mpu_Ox:-0.01
+time:9643,PIDX_output:0.02,P:-0.01,I:-0.00,D:0.04,mpu_Ox:-0.01
+time:9650,PIDX_output:0.04,P:-0.01,I:-0.00,D:0.05,mpu_Ox:-0.01
+time:9657,PIDX_output:0.01,P:-0.01,I:-0.00,D:0.02,mpu_Ox:-0.01
+time:9664,PIDX_output:-0.06,P:-0.00,I:-0.00,D:-0.05,mpu_Ox:-0.00
+time:9671,PIDX_output:-0.07,P:-0.01,I:-0.00,D:-0.06,mpu_Ox:-0.01
+time:9678,PIDX_output:-0.08,P:-0.01,I:-0.00,D:-0.07,mpu_Ox:-0.01
+time:9686,PIDX_output:-0.01,P:-0.00,I:-0.00,D:-0.00,mpu_Ox:-0.00
+time:9693,PIDX_output:0.03,P:-0.00,I:-0.00,D:0.03,mpu_Ox:-0.00
+time:9700,PIDX_output:-0.00,P:-0.00,I:-0.00,D:0.00,mpu_Ox:-0.00
+time:9707,PIDX_output:0.01,P:-0.00,I:-0.00,D:0.01,mpu_Ox:-0.00
+time:9714,PIDX_output:0.01,P:-0.00,I:-0.00,D:0.01,mpu_Ox:-0.00
+time:9721,PIDX_output:0.03,P:-0.00,I:-0.00,D:0.04,mpu_Ox:-0.00
+time:9729,PIDX_output:0.08,P:0.00,I:-0.00,D:0.08,mpu_Ox:0.00
+time:9736,PIDX_output:0.05,P:0.00,I:-0.00,D:0.04,mpu_Ox:0.00
+time:9743,PIDX_output:0.02,P:0.00,I:-0.00,D:0.02,mpu_Ox:0.00
+time:9750,PIDX_output:0.02,P:0.00,I:-0.00,D:0.02,mpu_Ox:0.00
+time:9757,PIDX_output:0.01,P:0.00,I:-0.00,D:0.01,mpu_Ox:0.00
