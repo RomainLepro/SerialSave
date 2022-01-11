@@ -47,7 +47,9 @@ def main():
             i+=1
             sleep(0.1)
             if ser.in_waiting > 0:
+                print(os.path.join(path,FileName))
                 f = open(os.path.join(path,FileName),"a")
+                print("file opened")
                 line = ser.readline().decode('utf-8').rstrip()
                 f.write(line+"\n")
                 print(line)
@@ -55,7 +57,7 @@ def main():
                 f.close()
     except:
         print("except")
-        f = open("serialSave.txt","a")
+        f = open(os.path.join(path,FileName),"a")
         f.write("\nan error occured, closing log file (usb deconected ?)\n")
         f.close()
 
