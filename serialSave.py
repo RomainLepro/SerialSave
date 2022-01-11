@@ -33,6 +33,7 @@ def main():
     try:
         #for ubuntu
         ser = serial.Serial('/dev/ttyACM0', 115200, timeout=1)
+        #path = "."
         path = "/home/pi/Desktop/imageDetection/SerialSave/Save"
     except:
         #for windows
@@ -52,12 +53,13 @@ def main():
     #ser.write("start")
     try:
         f = open(os.path.join(path,FileName),"a")
+        print("loop")
         while True:
             sleep(0.01)
             if ser.in_waiting > 0:
                 line = ser.readline().decode('utf-8').rstrip()
                 f.write(line+"\n")
-                print(line)
+                #print(line)
                 #close and reopen each time u write data 
     except:
         print("except")

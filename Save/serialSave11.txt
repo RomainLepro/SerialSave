@@ -1,0 +1,6 @@
+Begin plane
+init mpu
+Initializing I2C devices...
+Testing device connections...
+
+an error occured, closing log file (usb deconected ?)

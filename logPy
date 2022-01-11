@@ -1,0 +1,11 @@
+begin
+/dev/ttyUSB0 - USB Serial
+/dev/ttyAMA0 - ttyAMA0
+/dev/ttyUSB0
+input buffer initiated
+./Save
+['serialSave9.txt', 'serialSave1.txt', 'serialSave10.txt', 'serialSave12.txt', 'serialSave3.txt', 'serialSave13.txt', 'serialSave0.txt', 'serialSave6.txt', 'serialSave11.txt', 'serialSave7.txt', 'serialSave5.txt', 'serialSave4.txt', 'serialSave2.txt', 'serialSave8.txt']
+serialSave14.txt
+file created
+loop
+except
