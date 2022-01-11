@@ -2,10 +2,13 @@
 import serial
 import time
 from time import *
-
+import sys
 import os
 
 def main():
+    sys.stdout = open('logPy', 'w')
+    print('begin')
+    
     i = 0
     import serial.tools.list_ports as port_list
     sleep(10)
@@ -62,5 +65,7 @@ def main():
         f = open(os.path.join(path,FileName),"a")
         f.write("\nan error occured, closing log file (usb deconected ?)\n")
         f.close()
+        
+    sys.stdout.close()
 
 main()

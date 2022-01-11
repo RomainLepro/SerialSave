@@ -1,0 +1,19 @@
+Methode 1 
+
+Copy the python file to /bin:
+sudo cp -i /path/to/your_script.py /bin
+Add A New Cron Job:
+sudo crontab -e
+Scroll to the bottom and add the following line (after all the #'s):
+@reboot python /bin/your_script.py &
+The “&” at the end of the line means the command is run in the background and it won’t stop the system booting up.
+Test it:
+sudo reboot
+
+/home/pi/Desktop/imageDetection/SerialSave/serialSave.py
+
+to log datas into file
+import sys
+sys.stdout = open('file', 'w')
+print('test')
+sys.stdout.close()
